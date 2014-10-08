@@ -1,0 +1,13 @@
+{"pages":[
+		{"name":"Some cool statistics",
+		"type":"iframe",
+		"content":"http://something.com/mypage.html"},
+		{"name":"Settings",
+		"type":"custompage",
+		"content":"frontend/simple_setting.html"},
+		{"name":"Some other setting",
+		"type":"custompage",
+		"content":"frontend/simple_mapping.html"}
+	],
+ "permissions":["stream", "profile post", "profile get", "profile update", "settings"]
+}

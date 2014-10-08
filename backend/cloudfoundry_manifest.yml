@@ -1,0 +1,7 @@
+---
+applications:
+- name: jenz2 #several app installations can have same name as long as they are under different companies
+  command: node jenz2.js
+  instances: 1 #if more than 1 instance needed in base installation it can be set here
+  services: mongodb #if needed it will be set here
+  

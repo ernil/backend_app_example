@@ -1,0 +1,31 @@
+
+<script src="//code.jquery.com/jquery-x.js"></script>
+<script>
+
+
+    
+    function submit(){
+        
+        var data = {};
+        data.credentials = $("#credential").val();
+        
+        $.ajax({
+          type: "POST",
+          url: "api/settings",
+          data: JSON.Stringify(data),
+          success: success,
+          dataType: dataType
+        });
+    }
+    
+
+
+</script>
+
+
+
+<form>
+Your mandrill credentials: <input type="text" name="credential" id="credential" />
+
+<input type="button" onClick="submit()" />
+</form>
