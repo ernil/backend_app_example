@@ -1,0 +1,25 @@
+<form>
+Demo: <input type="text" name="credential" id="credential" />
+<input type="button" onclick="func()" value="save" />
+</form>
+
+<script src="//yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+<script src="frame.js"></script>
+<script>
+    /* global $:false, request: false, func: false */
+    /* jshint unused:false */
+
+    function func() {
+        request({
+            action: 'post',
+            data: $('#credential').val()
+        });
+    }
+
+    request({
+        action: 'get',
+        data: 'test data'
+    }, function (data) {
+        $('#credential').val(data);
+    });
+</script>
