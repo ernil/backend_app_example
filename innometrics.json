@@ -10,7 +10,7 @@
     }],
     "permissions": ["profile.update", "profile.create"],
     "runtime": {
-	"language": "php",
-	"version": "5.5"
+	   "language": "php",
+	   "version": "5.5"
     }
 }
